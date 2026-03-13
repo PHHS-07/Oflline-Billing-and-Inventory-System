@@ -1,1 +1,109 @@
-# Oflline-Billing-and-Inventory-System
+---
+
+# 🧾 Offline Billing & Inventory Management System
+
+A desktop application built for small businesses to manage billing and inventory entirely offline — no internet required. Features GST-compliant invoice generation, product management, and customer records, all in a clean Tkinter interface.
+
+---
+
+## 📌 Features
+
+- 🛒 Product management — add, edit, and delete inventory items
+- 👤 Customer records management
+- 🧮 Automated GST calculation on bills
+- 🔍 Real-time search across products and customers
+- 🧾 PDF invoice export with print-ready GST-compliant bills
+- 📦 Fully offline — no internet connection required
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Language | Python |
+| GUI | Tkinter |
+| Database | MySQL |
+| PDF Export | ReportLab |
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/PHHS-07/Oflline-Billing-and-Inventory-System.git
+cd Oflline-Billing-and-Inventory-System
+```
+
+### 2. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure MySQL
+
+- Make sure MySQL is installed and running
+- Create a database and update the connection details in `config.py` (or wherever your DB config lives):
+
+```python
+HOST = "localhost"
+USER = "your_username"
+PASSWORD = "your_password"
+DATABASE = "billing_db"
+```
+
+### 4. Run the Application
+
+```bash
+python main.py
+```
+
+---
+
+## 📦 Requirements
+
+```txt
+mysql-connector-python
+reportlab
+```
+
+Install with:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Usage
+
+1. Launch the app with `python main.py`
+2. Add products and customers via their respective modules
+3. Create a new bill — GST is calculated automatically
+4. Export the bill as a PDF for printing or records
+
+---
+
+## ⚖️ License
+
+This project is licensed under the **MIT License**. See the LICENSE file for details.
+
+---
+
+## 👤 Author
+
+Created by **Hari Hara Sudhan P**
+
+- GitHub: [github.com/PHHS-07](https://github.com/PHHS-07)
+- Email: [phariharasudhan2004@gmail.com](mailto:phariharasudhan2004@gmail.com)
+
+---
+
+## ⚠️ Disclaimer
+
+This application is intended for **small business and educational use**. Always verify generated bills and tax calculations before use in a production environment.
+
+---
