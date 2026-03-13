@@ -23,7 +23,7 @@ A desktop application built for small businesses to manage billing and inventory
 |-------|------------|
 | Language | Python |
 | GUI | Tkinter |
-| Database | MySQL |
+| Database | SQLite |
 | PDF Export | ReportLab |
 
 ---
@@ -43,30 +43,19 @@ cd Oflline-Billing-and-Inventory-System
 pip install -r requirements.txt
 ```
 
-### 3. Configure MySQL
-
-- Make sure MySQL is installed and running
-- Create a database and update the connection details in `config.py` (or wherever your DB config lives):
-
-```python
-HOST = "localhost"
-USER = "your_username"
-PASSWORD = "your_password"
-DATABASE = "billing_db"
-```
-
-### 4. Run the Application
+### 3. Run the Application
 
 ```bash
 python main.py
 ```
+
+> 💡 No database setup needed — SQLite creates the database file automatically on first run.
 
 ---
 
 ## 📦 Requirements
 
 ```txt
-mysql-connector-python
 reportlab
 ```
 
@@ -75,6 +64,8 @@ Install with:
 ```bash
 pip install -r requirements.txt
 ```
+
+> SQLite is built into Python — no separate installation required.
 
 ---
 
